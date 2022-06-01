@@ -1,26 +1,26 @@
 # stylelint-config-recommended
 
-[![NPM version](https://img.shields.io/npm/v/stylelint-config-recommended.svg)](https://www.npmjs.org/package/stylelint-config-recommended) [![Build Status](https://github.com/stylelint/stylelint-config-recommended/workflows/CI/badge.svg)](https://github.com/stylelint/stylelint-config-recommended/actions)
+[![NPM version]](https://www.npmjs.com/package/ec0lint-css-config-recommended)
 
-> The recommended shareable config for Stylelint.
+> The recommended shareable config for ec0lint-css.
 
-It turns on all the Stylelint rules that help you [_avoid errors_](https://stylelint.io/user-guide/rules/list/#avoid-errors).
+It turns on all the ec0lint-css rules.
 
 Use it as is or as a foundation for your own config.
 
 ## Installation
 
 ```bash
-npm install stylelint-config-recommended --save-dev
+npm i ec0lint-css-config-recommended
 ```
 
 ## Usage
 
-Set your `stylelint` config to:
+Set your `ec0lint-css` config to:
 
 ```json
 {
-  "extends": "stylelint-config-recommended"
+  "extends": "ec0lint-css-config-recommended"
 }
 ```
 
@@ -32,7 +32,7 @@ For example, to change the `at-rule-no-unknown` rule to use its `ignoreAtRules` 
 
 ```json
 {
-  "extends": "stylelint-config-recommended",
+  "extends": "ec0lint-css-config-recommended",
   "rules": {
     "at-rule-no-unknown": [
       true,
