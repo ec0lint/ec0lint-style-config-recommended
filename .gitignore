@@ -1,2 +1,4 @@
 node_modules
 .eslintcache
+.ec0lintcache
+.idea
