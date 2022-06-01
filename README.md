@@ -1,6 +1,6 @@
 # stylelint-config-recommended
 
-[![NPM version]](https://www.npmjs.com/package/ec0lint-css-config-recommended)
+[NPM version](https://www.npmjs.com/package/ec0lint-css-config-recommended)
 
 > The recommended shareable config for ec0lint-css.
 
