@@ -1,15 +1,15 @@
 {
-  "name": "stylelint-config-recommended",
-  "version": "7.0.0",
-  "description": "Recommended shareable config for Stylelint",
+  "name": "ec0lint-css-config-recommended",
+  "version": "0.0.1",
+  "description": "The recommended shareable config for ec0lint-css",
   "keywords": [
-    "stylelint",
-    "stylelint-config",
-    "recommended"
+    "ec0lint",
+    "ec0lint-css",
+    "ec0lint-css-config"
   ],
-  "repository": "stylelint/stylelint-config-recommended",
+  "repository": "ec0lint/ec0lint-css-config-recommended",
   "license": "MIT",
-  "author": "Stylelint",
+  "author": "ec0lint",
   "main": "index.js",
   "files": [
     "index.js"
@@ -32,7 +32,7 @@
   "prettier": "@stylelint/prettier-config",
   "eslintConfig": {
     "extends": [
-      "stylelint"
+      "ec0lint-css"
     ],
     "globals": {
       "module": true,
