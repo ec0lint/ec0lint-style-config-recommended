@@ -1,4 +1,4 @@
-# stylelint-config-recommended
+# ec0lint-config-recommended
 
 [NPM version](https://www.npmjs.com/package/ec0lint-css-config-recommended)
 

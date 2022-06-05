@@ -32,7 +32,7 @@
   "prettier": "@stylelint/prettier-config",
   "eslintConfig": {
     "extends": [
-      "ec0lint-css"
+      "stylelint"
     ],
     "globals": {
       "module": true,
@@ -56,9 +56,9 @@
     "npm-run-all": "^4.1.5",
     "prettier": "^2.6.2",
     "remark-cli": "^10.0.1",
-    "stylelint": "^14.8.5"
+    "ec0lint-css": "^0.0.1"
   },
   "peerDependencies": {
-    "stylelint": "^14.4.0"
+    "ec0lint-css": "^0.0.1"
   }
 }
