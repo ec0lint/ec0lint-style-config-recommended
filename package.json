@@ -1,6 +1,6 @@
 {
   "name": "ec0lint-css-config-recommended",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "The recommended shareable config for ec0lint-css",
   "keywords": [
     "ec0lint",
