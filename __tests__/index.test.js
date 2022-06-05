@@ -47,7 +47,7 @@ describe('flags warnings with invalid css', () => {
 	it('correct warning text', () => {
 		return result.then((data) =>
 			expect(data.results[0].warnings[0].text).toBe(
-				'Unexpected unknown type selector "madeup" (no-ttf-font-files)',
+				'Format of custom font can be changed to WOFF or WOFF2. CO2 reduction: up to 80% of the font file. (no-ttf-font-files)',
 			),
 		);
 	});
@@ -63,7 +63,7 @@ describe('flags warnings with invalid css', () => {
 	});
 
 	it('correct line number', () => {
-		return result.then((data) => expect(data.results[0].warnings[0].line).toBe(1));
+		return result.then((data) => expect(data.results[0].warnings[0].line).toBe(43));
 	});
 
 	it('correct column number', () => {
