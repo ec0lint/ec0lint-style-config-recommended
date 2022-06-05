@@ -2,7 +2,7 @@
 
 const config = require('../');
 const fs = require('fs');
-const stylelint = require('stylelint');
+const ec0lint = require('ec0lint-css');
 
 const validCss = fs.readFileSync('./__tests__/valid.css', 'utf-8');
 const invalidCss = fs.readFileSync('./__tests__/invalid.css', 'utf-8');
@@ -11,7 +11,7 @@ describe('flags no warnings with valid css', () => {
 	let result;
 
 	beforeEach(() => {
-		result = stylelint.lint({
+		result = ec0lint.lint({
 			code: validCss,
 			config,
 		});
@@ -30,7 +30,7 @@ describe('flags warnings with invalid css', () => {
 	let result;
 
 	beforeEach(() => {
-		result = stylelint.lint({
+		result = ec0lint.lint({
 			code: invalidCss,
 			config,
 		});
@@ -47,14 +47,14 @@ describe('flags warnings with invalid css', () => {
 	it('correct warning text', () => {
 		return result.then((data) =>
 			expect(data.results[0].warnings[0].text).toBe(
-				'Unexpected unknown type selector "madeup" (selector-type-no-unknown)',
+				'Format of custom font can be changed to WOFF or WOFF2. CO2 reduction: up to 80% of the font file. (no-ttf-font-files)',
 			),
 		);
 	});
 
 	it('correct rule flagged', () => {
 		return result.then((data) =>
-			expect(data.results[0].warnings[0].rule).toBe('selector-type-no-unknown'),
+			expect(data.results[0].warnings[0].rule).toBe('no-ttf-font-files'),
 		);
 	});
 
@@ -67,6 +67,6 @@ describe('flags warnings with invalid css', () => {
 	});
 
 	it('correct column number', () => {
-		return result.then((data) => expect(data.results[0].warnings[0].column).toBe(1));
+		return result.then((data) => expect(data.results[0].warnings[0].column).toBe(43));
 	});
 });

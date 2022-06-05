@@ -1,6 +1,6 @@
 {
   "name": "ec0lint-css-config-recommended",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "The recommended shareable config for ec0lint-css",
   "keywords": [
     "ec0lint",
@@ -32,7 +32,7 @@
   "prettier": "@stylelint/prettier-config",
   "eslintConfig": {
     "extends": [
-      "ec0lint-css"
+      "stylelint"
     ],
     "globals": {
       "module": true,
@@ -47,6 +47,7 @@
   "devDependencies": {
     "@stylelint/prettier-config": "^2.0.0",
     "@stylelint/remark-preset": "^3.0.0",
+    "ec0lint-css": "^0.0.1",
     "eslint": "^8.16.0",
     "eslint-config-stylelint": "^15.1.0",
     "husky": "^8.0.1",
@@ -55,10 +56,9 @@
     "np": "^7.6.1",
     "npm-run-all": "^4.1.5",
     "prettier": "^2.6.2",
-    "remark-cli": "^10.0.1",
-    "stylelint": "^14.8.5"
+    "remark-cli": "^10.0.1"
   },
   "peerDependencies": {
-    "stylelint": "^14.4.0"
+    "ec0lint-css": "^0.0.1"
   }
 }
