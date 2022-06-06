@@ -1,6 +1,6 @@
 {
   "name": "ec0lint-css-config-recommended",
-  "version": "0.0.7",
+  "version": "1.0.0",
   "description": "The recommended shareable config for ec0lint-css",
   "keywords": [
     "ec0lint",
@@ -47,7 +47,7 @@
   "devDependencies": {
     "@stylelint/prettier-config": "^2.0.0",
     "@stylelint/remark-preset": "^3.0.0",
-    "ec0lint-css": "^0.0.8",
+    "ec0lint-css": "^1.0.0",
     "eslint": "^8.16.0",
     "eslint-config-stylelint": "^15.1.0",
     "husky": "^8.0.1",
@@ -59,6 +59,6 @@
     "remark-cli": "^10.0.1"
   },
   "peerDependencies": {
-    "ec0lint-css": "^0.0.8"
+    "ec0lint-css": "^1.0.0"
   }
 }
