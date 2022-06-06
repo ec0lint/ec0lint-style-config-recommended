@@ -2,6 +2,8 @@
 
 [NPM version](https://www.npmjs.com/package/ec0lint-css-config-recommended)
 
+[Website](https://ec0lint.com)
+
 > The recommended shareable config for ec0lint-css.
 
 It turns on all the ec0lint-css rules.
@@ -45,6 +47,12 @@ For example, to change the `at-rule-no-unknown` rule to use its `ignoreAtRules` 
   }
 }
 ```
+
+# ec0lint mission
+
+ec0lint is a static code analysis tool that provides users with hints on how to reduce the carbon footprint of their websites during the development process. Applying code changes suggested by ec0lint results in lower carbon emissions per visit, quicker loading and higher space efficiency. The tool is open-source and community-driven.
+
+Learn more [at our page](https://ec0lint.com)
 
 ## [Changelog](CHANGELOG.md)
 
