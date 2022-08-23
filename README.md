@@ -1,28 +1,28 @@
 # ec0lint-config-recommended
 
-[NPM version](https://www.npmjs.com/package/ec0lint-css-config-recommended)
+[NPM version](https://www.npmjs.com/package/ec0lint-style-config-recommended)
 
 [Website](https://ec0lint.com)
 
-> The recommended shareable config for ec0lint-css.
+> The recommended shareable config for ec0lint-style.
 
-It turns on all the ec0lint-css rules.
+It turns on all the ec0lint-style rules.
 
 Use it as is or as a foundation for your own config.
 
 ## Installation
 
 ```bash
-npm i ec0lint-css-config-recommended
+npm i ec0lint-style-config-recommended
 ```
 
 ## Usage
 
-Set your `ec0lint-css` config to:
+Set your `ec0lint-style` config to:
 
 ```json
 {
-  "extends": "ec0lint-css-config-recommended"
+  "extends": "ec0lint-style-config-recommended"
 }
 ```
 
@@ -34,7 +34,7 @@ For example, to change the `at-rule-no-unknown` rule to use its `ignoreAtRules` 
 
 ```json
 {
-  "extends": "ec0lint-css-config-recommended",
+  "extends": "ec0lint-style-config-recommended",
   "rules": {
     "at-rule-no-unknown": [
       true,

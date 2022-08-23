@@ -14,4 +14,4 @@
 
 ## 0.0.1
 
-- Edit for ec0lint-css config (@malwinq)
+- Edit for ec0lint-style config (@malwinq)
