@@ -2,7 +2,7 @@
 
 const config = require('../');
 const fs = require('fs');
-const ec0lint = require('ec0lint-css');
+const ec0lint = require('ec0lint-style');
 
 const validCss = fs.readFileSync('./__tests__/valid.css', 'utf-8');
 const invalidCss = fs.readFileSync('./__tests__/invalid.css', 'utf-8');

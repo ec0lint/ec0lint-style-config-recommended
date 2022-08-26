@@ -1,13 +1,13 @@
 {
-  "name": "ec0lint-css-config-recommended",
-  "version": "1.0.0",
-  "description": "The recommended shareable config for ec0lint-css",
+  "name": "ec0lint-style-config-recommended",
+  "version": "1.0.1",
+  "description": "The recommended shareable config for ec0lint-style",
   "keywords": [
     "ec0lint",
-    "ec0lint-css",
-    "ec0lint-css-config"
+    "ec0lint-style",
+    "ec0lint-style-config"
   ],
-  "repository": "ec0lint/ec0lint-css-config-recommended",
+  "repository": "ec0lint/ec0lint-style-config-recommended",
   "license": "MIT",
   "author": "ec0lint",
   "main": "index.js",
@@ -47,7 +47,7 @@
   "devDependencies": {
     "@stylelint/prettier-config": "^2.0.0",
     "@stylelint/remark-preset": "^3.0.0",
-    "ec0lint-css": "^1.0.0",
+    "ec0lint-style": "^1.0.5",
     "eslint": "^8.16.0",
     "eslint-config-stylelint": "^15.1.0",
     "husky": "^8.0.1",
@@ -59,6 +59,6 @@
     "remark-cli": "^10.0.1"
   },
   "peerDependencies": {
-    "ec0lint-css": "^1.0.0"
+    "ec0lint-style": "^1.0.5"
   }
 }
