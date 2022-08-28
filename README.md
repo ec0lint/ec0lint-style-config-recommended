@@ -1,4 +1,4 @@
-![ec0lint](/docs/banner_github.png)
+![ec0lint](/banner_github.png)
 
 [![npm version](https://img.shields.io/npm/v/ec0lint-style.svg)](https://www.npmjs.com/package/ec0lint-style)
 [![Downloads](https://img.shields.io/npm/dm/ec0lint-style.svg)](https://www.npmjs.com/package/ec0lint-style)
