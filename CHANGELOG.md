@@ -15,3 +15,7 @@
 ## 0.0.1
 
 - Edit for ec0lint-css config (@malwinq)
+
+## 2.0.0
+
+- Add 'require-font-display' (@malwinq)

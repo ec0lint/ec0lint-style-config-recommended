@@ -40,11 +40,11 @@ describe('flags warnings with invalid css', () => {
 		return result.then((data) => expect(data.errored).toBeTruthy());
 	});
 
-	it('flags one warning', () => {
-		return result.then((data) => expect(data.results[0].warnings).toHaveLength(1));
+	it('flags two warnings', () => {
+		return result.then((data) => expect(data.results[0].warnings).toHaveLength(2));
 	});
 
-	it('correct warning text', () => {
+	it('correct warning text no-ttf-font-files', () => {
 		return result.then((data) =>
 			expect(data.results[0].warnings[0].text).toBe(
 				'Format of the custom font can be changed to WOFF or WOFF2. CO2 reduction: up to 80% of the font file. (no-ttf-font-files)',
@@ -52,9 +52,23 @@ describe('flags warnings with invalid css', () => {
 		);
 	});
 
-	it('correct rule flagged', () => {
+	it('correct warning text require-font-display', () => {
+		return result.then((data) =>
+			expect(data.results[0].warnings[1].text).toBe(
+				'No font-display property specified inside @font-face rule. (require-font-display)',
+			),
+		);
+	});
+
+	it('correct rule flagged no-ttf-font-files', () => {
 		return result.then((data) =>
 			expect(data.results[0].warnings[0].rule).toBe('no-ttf-font-files'),
+		);
+	});
+
+	it('correct rule flagged require-font-display', () => {
+		return result.then((data) =>
+			expect(data.results[0].warnings[1].rule).toBe('require-font-display'),
 		);
 	});
 
