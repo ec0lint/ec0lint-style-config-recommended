@@ -19,3 +19,7 @@
 ## 2.0.0
 
 - Add 'require-font-display' (@malwinq)
+
+## 2.1.0
+
+- Add 'no-web-fonts' (@malwinq)

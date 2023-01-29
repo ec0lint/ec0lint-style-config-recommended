@@ -1,1 +1,1 @@
-@font-face { font-family: 'foo'; src: url('/path/to/foo.woff2'); font-display: 'block' } 
+@font-face { font-family: system-ui, Verdana; font-display: 'block' }
