@@ -41,14 +41,13 @@ describe('flags warnings with invalid css', () => {
 	});
 
 	it('flags two warnings', () => {
-		return result.then((data) => expect(data.results[0].warnings).toHaveLength(2));
+		return result.then((data) => expect(data.results[0].warnings).toHaveLength(3));
 	});
 
 	it('correct warning text no-ttf-font-files', () => {
 		return result.then((data) =>
 			expect(data.results[0].warnings[0].text).toBe(
-				'Format of the custom font can be changed to WOFF or WOFF2. CO2 reduction: up to 80% of the font file.\n' +
-					'Your file can be converted online at https://cloudconvert.com/\n' +
+				'Format of the custom font can be changed to WOFF or WOFF2. Your file can be converted online at https://cloudconvert.com/\n' +
 					'Estimated CO2 reduction that you can achieve by converting your file is: 0.01g (no-ttf-font-files)',
 			),
 		);

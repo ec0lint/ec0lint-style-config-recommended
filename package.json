@@ -1,6 +1,6 @@
 {
   "name": "ec0lint-style-config-recommended",
-  "version": "2.1.0",
+  "version": "2.1.1",
   "description": "The recommended shareable config for ec0lint-style",
   "keywords": [
     "ec0lint",
